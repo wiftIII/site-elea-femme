@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica';
+}
+
+header {
+    font-family: 'Arial';
+    background-color: #390039;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 1em 1em;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+h2 {
+    color: #390039;
+    margin-bottom: 1em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+}
+
+nav ul a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 0 10em;
+    margin: 1em 0;
+}
+
+.carousel-container {
+    overflow-x: auto;
+    padding: 1em;
+}
+
+.carousel-wrapper {
+    display: flex;
+}
+
+.carousel-slide {
+    min-width: 300px;
+    height: 200px;
+    position: relative;
+    margin-right: 1em;
+    border-radius: 0.5em;
+    overflow: hidden;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-slide:hover img {
+    filter: blur(2px);
+}
+
+.carousel-slide p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    color: white;
+    padding: 0.5em;
+    margin: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.carousel-slide:hover p {
+    opacity: 1;
+}
