@@ -19,7 +19,11 @@ header {
     margin-bottom: 1em;
 }
 
-h2 {
+header h1 {
+    color: white;
+}
+
+h1, h2, h3, h4 {
     color: #390039;
     margin-bottom: 1em;
 }
@@ -40,6 +44,12 @@ section {
     margin: 1em 0;
 }
 
+section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5em;
+}
+
 section p {
     color: #41273f;
     line-height: 2em;
@@ -51,4 +61,44 @@ footer {
     text-align: center;
     padding: 1em;
     margin-top: 2em;
+}
+
+.inventions-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5em;
+    list-style: none;
+}
+
+.inventions-list li {
+    border-radius: 0.5em;
+    overflow: hidden;
+    background: #f9f4f9;
+    transition: transform 0.3s ease;
+}
+
+.inventions-list li:hover {
+    transform: translateY(-4px);
+}
+
+.inventions-list a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+}
+
+.inventions-list img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.inventions-list h4 {
+    padding: 0.75em 1em 0.25em;
+    margin-bottom: 0;
+}
+
+.inventions-list p {
+    padding: 0 1em 1em;
+    line-height: 1.5;
 }
