@@ -40,6 +40,19 @@ section {
     margin: 1em 0;
 }
 
+section p {
+    color: #41273f;
+    line-height: 2em;
+}
+
+footer {
+    background-color: #390039;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    margin-top: 2em;
+}
+
 .carousel-container {
     overflow-x: auto;
     padding: 1em;
