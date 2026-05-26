@@ -131,3 +131,8 @@ footer {
     line-height: 1.8;
     color: #41273f;
 }
+
+footer p {
+    font-size: 1.2em;
+    margin: 1rem;
+}
