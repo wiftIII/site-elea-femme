@@ -1,0 +1,42 @@
+main section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3em;
+    margin-top: 2em;
+}
+
+main section p {
+    max-width: 1000px;
+    text-align: justify;
+    line-height: 1.8;
+    color: #41273f;
+    margin-bottom: 2em;
+}
+
+.right, .left {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 3em;
+    margin-top: 3em;
+}
+
+main section div img {
+    border-radius: 0.5em;
+    margin-bottom: 1em;
+    width: 400px;
+    height: 400px;
+    border-radius: 10%;
+    object-fit: cover;
+    border: 3px solid #ddd;
+}
+
+.right div h3, .right div p {
+    text-align: left;
+    padding-right: 3em;
+}
+
+.left div h3, .left div p {
+    text-align: right;
+    padding-left: 3em;
+}
